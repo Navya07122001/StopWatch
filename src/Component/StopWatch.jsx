@@ -26,7 +26,7 @@ const StopWatch = () => {
     <div style={{display:"flex",justifyContent:"center"}}>
     <div style={{border:"1px solid black",padding:"35px",borderRadius:'5px'}}>
      <div style={{fontSize:"45px",fontWeight:"700",fontFamily:"serif",marginBottom:"20px"}}>Stopwatch</div>
-     <div style={{fontFamily:'serif',fontSize:'20px',marginBottom:"20px"}}>Time:{formatTime(time)}</div>
+     <div style={{fontFamily:'serif',fontSize:'20px',marginBottom:"20px"}}>Time: {formatTime(time)}</div>
      <button onClick={()=>{setIsRunning(prev=>!prev)}}
         style={{fontFamily:'serif',fontSize:'20px'}}>{isRunning?"Stop":"Start"}</button>
      <button onClick={()=>{
