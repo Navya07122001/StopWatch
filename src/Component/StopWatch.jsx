@@ -6,7 +6,7 @@ const StopWatch = () => {
     const formatTime=(time)=>{
         let mins=Math.floor(time/60);
         const secs=time%60
-       return `${mins}:${time<10?"0":""}${secs}`;
+       return `${mins}:${secs<10?"0":""}${secs}`;
     }
     var timer;
      useEffect(()=>{
